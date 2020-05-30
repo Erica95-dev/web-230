@@ -1,5 +1,5 @@
 # web-231
 Introduction to JavaScript
 #contributors
-Professor Krasso - Bellevue University
+Professor Cross - Bellevue University
 Erica Perry - Bellevue University
