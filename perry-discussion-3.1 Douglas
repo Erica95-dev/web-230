@@ -1,0 +1,34 @@
+/* ============================================
+; Title: Discussion Board
+; Author: Professor Krasso
+; Date: 9 June 2020
+; Modified By: Erica Perry
+; Description: Switch Errors
+;=========================================== */
+
+// Selects the expected output
+const animal = "cow" ;
+
+
+// Switch Statement with two errors below
+switch (animal) {
+// removed the etra space in the parentheses and changed the capital A to a lower case a
+
+case "dog" :
+console . log ( 'This is a Dog' )
+break ;
+
+case "cat" :
+console . log ( 'This is a Cat' )
+break ;
+
+case "frog" :
+console . log ( 'This is a Frog' )
+break ;
+//  case was missing an e, so I added to correct the function
+
+default :
+console . log ( 'Unrecognized key.' )
+break ;
+}
+// added a bracket to the end of the switch function so it would run correctly 
