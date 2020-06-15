@@ -1,0 +1,44 @@
+/*
+/*
+
+============================================
+
+; Title:  Discussion 3.1
+
+; Author: Brooklyn Hairston
+
+; Date:   10 June 2020
+
+; Modified by: Erica Perry
+
+; Description: JavaScript program using while loop with three errors
+
+;===========================================
+
+*/
+
+
+//expected output when loop terminates first = 10, second = 40
+
+
+var first = 5;
+
+var second = 0;
+
+
+//while loop with two errors
+
+while (first < 10) { // added parenthese and removed the quotaion marks
+
+first;first++; //added  first ++ 
+
+second += first;
+
+}
+
+
+//output with one error
+
+console.log(first);
+
+console.log(second);// added a lowercase s due to javescript being case sensative
