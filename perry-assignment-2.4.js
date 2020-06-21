@@ -45,3 +45,17 @@ console.log(convertToInt("25"));
 console.log(convertToFloat("8000.15"));
 
 console.log("Hello my name is " + fullName("Erica", "Perry") + "! Today's date is " + dateWriter("2020","5","30") + " and the current temputure is " + formatNumber(33.634252342,1) + " degreess. I am " + convertToInt(" 25 ") + " years old "  + " and my saving account goal is " + convertToFloat("8000.15") + " dollars. ")
+
+// .editcode
+root = true
+
+[*]
+charset = utf-8
+indent_style = space
+indent_size = 2
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+[*.md]
+max_line_length = off
+trim_trailing_whitespace = false
