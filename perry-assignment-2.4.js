@@ -46,7 +46,7 @@ console.log(convertToFloat("8000.15"));
 
 console.log("Hello my name is " + fullName("Erica", "Perry") + "! Today's date is " + dateWriter("2020","5","30") + " and the current temputure is " + formatNumber(33.634252342,1) + " degreess. I am " + convertToInt(" 25 ") + " years old "  + " and my saving account goal is " + convertToFloat("8000.15") + " dollars. ")
 
-// .editcode
+// .editorconfig
 root = true
 
 [*]
