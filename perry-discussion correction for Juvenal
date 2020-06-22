@@ -1,0 +1,19 @@
+/*
+ 	============================================
+ 	; Title: Discussion 4.1
+ 	; Author: Juvenal Gonzalez
+ 	; Date: 17 June 2020
+  ; Modified by : Erica Perry
+ 	; Description: Create a JavaScript program with array objects that contain two errors.
+ 	;===========================================
+ 	*/
+ 	//Sytax error
+ 	a = [0,10,"Money"];
+   // added " to make "Money" a string
+ 	//fix undefined output
+ 	for(i=0; i<2; i++)
+ 	console.log(a[i])
+ 	 
+ 	delete a[0];
+ 	console.log(a[2]);//change index to output something that is not undefined
+// changed the index to two because the index is 0,1,2 and 
