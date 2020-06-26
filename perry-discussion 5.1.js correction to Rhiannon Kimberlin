@@ -1,0 +1,23 @@
+/*
+============================================
+ 	; Title: Discussion 5.1
+ 	; Author: Professor Krasso
+ 	; Date: 25 June 2020
+ 	; Modified by: Erica Perry
+ 	; Description: Create an advanced array Javascript
+ 	; program with two or more errors.
+ 	;===========================================
+ 	*/
+ 	 
+ 	let disney = new Map();
+ 	disney.set('Tangled', 'Rapunzel');// needed to add a comma between the key and the value for the program to run correctly
+ 	disney.set('Beauty and the Beast', 'Belle');
+ 	disney.set('Princess and the Frog', 'Tiana');
+ 	disney.size;
+ 	disney.get('Tangled');
+ 	disney.get('Beauty and the Beast');// added ;  to terminate the statement. 
+ 	disney.get('Princess and the Frog');// added ; to terminate the statement. 
+ 	 
+ 	for (let[movie, princess] of disney) { // removed the parentheses around movie and princess and added braces because it's an array
+ 	console.log(movie + ' stars ' + princess);
+ 	}
