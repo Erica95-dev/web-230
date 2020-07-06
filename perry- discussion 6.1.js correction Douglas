@@ -1,0 +1,31 @@
+/*
+; Title: Assignment 6.1
+ 	; Author: Professor Krasso
+ 	; Date: 1 July 2020
+ 	; Modified By: Erica Perry
+ 	; Description: Errors below
+ 	;=========================================== */
+ 	/* 
+ 	//Header
+ 	var header = require('../jenkins-header');
+ 	console.log(header.display("Douglas", "Jenkins", "Exercise 5.4"));
+ 	console.log ('\n');
+ 	 */
+
+ 	//Three errors below
+ 	try {
+ 	// variables
+ 	let x = 5; //added semicolon so it run correctly
+ 	let y = 3; //added semicolon so it run correctly
+ 	const sum = x - y; //added semicolon so it run correctly
+ 	 
+ 	// if statement ===
+ 	if (sum === 2) throw 'Equal Value';// removed the s from throw and added  a semicolon
+ 	 
+ 	// output
+ 	console.log(sum); //added semicolon
+ 	} catch (err) { // removed s from err because it wouldn't match err
+ 	console.log('Catch clause: ' + err);// added semicolon
+ 	} finally {
+ 	console.log('Finally clause reached...')
+   } // changed from brackets to curly braces so the program would run correctly
