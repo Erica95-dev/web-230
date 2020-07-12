@@ -32,7 +32,7 @@
  	</body>
  	 
  	<script>
- 	document.querySelector("h1").innerHTML = "Sour Candies"; // added apostrophes around your h1
- 	getElementById("fourth").innerHTML = "Sour  Patch Kids"; // added double apostrophes to fourth // synthaxError added the second pair of apostrophe 
+ 	document.querySelector("h1").innerHTML = "Sour Candies"; // added quotation makes around your (h1)
+ 	getElementById("fourth").innerHTML = "Sour  Patch Kids"; // changed to double quotations makes to fourth // synthaxError added the second pair of quotations makes 
  	</script>
  	</html>
