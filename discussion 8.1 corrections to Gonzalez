@@ -1,0 +1,30 @@
+	; Title: gonzalez-discussion-8.1
+ 	; Author: Juvenal Gonzalez
+ 	; Date: 12 July 2020
+ 	; Description: Create an html with javascript incorporating the Jquery library with 2 errors.
+ 	;===========================================
+ 	*/ -->
+ 	<!-- Expected Output: a button that fades in a hidden div tag-->
+ 	html>
+ 	<html lang="en">
+ 	<head>
+ 	<meta charset="UTF-8">
+ 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ 	<script>
+ 	$(document).ready(function(){
+ 	$("button").click(function(){ <!-- One Error -->// a $ is needed for the function to be called upon
+ 	$("div").fadeIn("slow"); <!-- One Error -->
+ 	});// div was added into the parentheses to match your div id 
+ 	});
+ 	</script>
+ 	</head>
+ 	 
+ 	<body>
+ 	 
+ 	<button>Click For Fade In</button><br><br>
+ 	 
+ 	<div id ="fade1" style="display:none;background-color:red;width:36px;"> Hello </div>
+ 	 
+ 	</body>
+ 	</html>
+<!--  https://github.com/JuvenalG/web-231/blob/master/week-8/gonzalez-discussion-8.1.html -->
