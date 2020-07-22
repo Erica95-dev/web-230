@@ -1,0 +1,92 @@
+/* 
+
+Title: Perry-excerise 8.4.html
+Author: Erica Perry
+Date:7/20/2020
+Description:  constructed objects
+*/
+
+
+/*var header = require('../Erica-header.js');
+console.log(header.display("Erica", "Perry", "assignment 8.4.html"));
+console.log("\n") */
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Assignment 8.4</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- you will need to the href to point to your root directories css file -->
+  <link rel="stylesheet" href="/path/to/your/root/css/file">
+
+  <style type="text/css">
+    #employee tbody tr:hover {
+      cursor: pointer;
+      background-color: #ffff99;
+    }
+  </style>
+</head>
+<body>
+    <div id="emps"></div>
+    
+<script> 
+    class Employee{
+        constructor(id,firstName, lastName, title){
+            this.id = id;
+            this.firstName = firstName;
+            this.lastName = lastName;
+            this.title = title;
+        }
+    }
+
+    var list_of_employees = [
+        new Employee(1, "Thomas", "Edison", "Software Engineer"),
+        new Employee(2, "Benjamin","Franklin","Programmer"),
+        new Employee(3, "Nikola","Tesla","Project Manager"),
+        new Employee(4, "Charles","Babbage","Product Manager"),
+        new Employee(5, "Alexander","Bell","Bussiness Analyst"),
+    ];
+    // get function created
+    function getEmployee(id, employees){
+        for (var e of employees){
+            if (e.id == id){
+                alert(e.id + ", " + e.firstName + ", " + e.lastName + ", " + e.title);
+            }
+        }
+    }
+
+    var output = "";
+    output = output + "<table>";
+
+    for (var e of list_of_employees){
+        output = output + "<tr>";
+        output = output + "<td>" + e.id + "</td>";
+        output = output + "<td>" + e.firstName + "</td>";
+        output = output + "<td>" + e.lastName + "</td>";
+        output = output + "<td>" + e.title + "</td>";
+        output = output + "</tr>";
+    }
+
+    output = output + "</table>";
+
+    document.getElementById("emps").innerHTML = output;
+
+</script>
+
+
+<script type="text/javascript">
+
+  // jQuery onClick event
+  // Don't remove this, just add your code to the body of the event (curly braces)
+  $(function () {
+    $("table tr").click(function () {
+        var employee_id = $(this).find('td:first').html();
+        getEmployee(employee_id, list_of_employees)
+    })
+  });
+</script>
+</body>
+</html>
